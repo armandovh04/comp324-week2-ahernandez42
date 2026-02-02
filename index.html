@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="styles.css" />
+<script src="app.js" defer></script>
+
+<header>
+    <h1>Signup</h1>
+    <p class="site-title"> Week 2 Site </p>
+    <nav aria-label="Primary">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <form id="signupForm" novalidate>
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" required minlength="2" aria-describedby="nameError" />
+            <p id="nameError"></p>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required aria-describedby="emailError" />
+            <p id="emailError"></p>
+        </div>
+
+    <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required minlength="8" aria-describedby="passwordError" />
+            <p id="passwordError"></p>
+        </div>
+
+        <button type="submit">Create account</button>
+        <p role="status" id="formStatus"></p>
+    </form>
+
+</main>
+
+<footer>
+    <small>CS 324/424</small>
+</footer>
